@@ -5,7 +5,7 @@ The slides from the original presentation can be found [here](http://nupurkapoor
 
 This presentation was created for Women Who Code DC's [Intro to Git meetup.] (http://www.meetup.com/Women-Who-Code-DC/events/210383992/). It will introduce you to Git, a version control system. This presentation is perfect for beginners as we'll show you the tool many developers use to collaborate and back up code. If you're a developer and you are not using a version control system, you should come out too as it's an absolute must for a developer's workflow.
 
-# Viewing/Editing These Slides Locally
+# Viewing/Editing these slides locally
 These slides use both [Node]() and [Grunt](). If you don't have these, check their websites for installation instructions. To run a web server locally to view the slides, do the following:
 Ensure you have node installed:
 
