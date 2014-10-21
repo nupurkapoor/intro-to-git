@@ -62,6 +62,10 @@ body {
 	text-shadow: none;
 }
 
+.code {
+	color: #0066FF;
+}
+
 
 /*********************************************
  * HEADERS
