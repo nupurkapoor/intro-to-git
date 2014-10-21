@@ -81,23 +81,24 @@
       </section>
 
       <section>
-        <h2>Backing up code</h2>
-        <ul>
-          <li>'Remote repositories'</li>
-          <li><code>push</code>-ing, <code> pull</code>-ing</li>
-          <li>Dropbox for code</li>
-        </ul>
+        <section>
+          <h2>Backing up code</h2>
+          <ul>
+            <li>'Remote repositories'</li>
+            <li><code>push</code>-ing, <code> pull</code>-ing</li>
+            <li>Dropbox for code</li>
+          </ul>
+          <section>
+            <ul>
+              <li>Git is like Dropbox except that with git, you're backing up the <em>history</em> of your files too</li>
+              <li>We call each project a <em>repository</em> or a <em>repo</em></li>
+              <li>To get code from it and to put new code on it, we use the verbs <em>push</em> and <em>pull</em>.</li>
+            </ul>
+          </section>
+        </section>
       </section>
 
       <section>
-        <ul>
-          <li>Git is like Dropbox except that with git, you're backing up the <em>history</em> of your files too</li>
-          <li>We call each project a <em>repository</em> or a <em>repo</em></li>
-          <li>To get code from it and to put new code on it, we use the verbs <em>push</em> and <em>pull</em>.</li>
-        </ul>
-      </section>
-
-       <section>
         <section>
           <h2>Sharing Code</h2>
           <ul>
@@ -121,86 +122,95 @@
         </section>
 
         <section>
-          <h2>So what is Github, then?</h2>
-          <ul>
-            <li>Github: https://github.com/</li>
-            <li>Website where you can backup your code (like Dropbox)</li>
-            <li>See other people's code (open-source)</li>
-            <li>Manage your code (repositories)</li>
-            <li>Work with other devs to make stuff (<code>pull requests</code>)</li>
-          </ul>
-        </section>
+          <section>
+            <h2>So what is Github, then?</h2>
+            <ul>
+              <li>Github: <font color="blue">https://github.com/</font></li>
+              <li>Website where you can backup your code (like Dropbox)</li>
+              <li>See other people's code (open-source)</li>
+              <li>Manage your code (repositories)</li>
+              <li>Work with other devs to make stuff (<code>pull requests</code>)</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>Common terminology</h2>
+            <ul>
+              <li><b>Command Line: </b>The computer program we use to input Git commands.</li>
+              <li><b>Repository: </b>A directory or storage space where your projects can live. Shorten to 'repo'. You can keep code files, text files, image files inside a repository.</li>
+              <li><b>Commit: </b> This is the command that gives Git its power. When you commit, you are taking a “snapshot” of your repository at that point in time, giving you a checkpoint to which you can reevaluate or restore your project to any previous state.</li>
+              <li><b>Branch: </b> In multiple-user project scenerios, users “branch off” of the main project with their own versions with changes they themselves have made. After they’re done, it’s time to “merge” that branch back with the “master,” the main directory of the project.</li>
+            </ul>
+          </section>
+        </section> 
 
         <section>
-          <h2>Common terminology</h2>
-          <ul>
-            <li><b>Command Line: </b>The computer program we use to input Git commands.</li>
-            <li><b>Repository: </b>A directory or storage space where your projects can live. Shorten to 'repo'. You can keep code files, text files, image files inside a repository.</li>
-            <li><b>Commit: </b> This is the command that gives Git its power. When you commit, you are taking a “snapshot” of your repository at that point in time, giving you a checkpoint to which you can reevaluate or restore your project to any previous state.</li>
-            <li><b>Branch: </b> In multiple-user project scenerios, users “branch off” of the main project with their own versions with changes they themselves have made. After they’re done, it’s time to “merge” that branch back with the “master,” the main directory of the project.</li>
-          </ul>
-        </section>
+          <section>
+            <h2>So, let's try it.</h2>
+            <li>If you don't already have one, create an account on Github</li> 
+            <li>Navigate to <font color="blue">https://github.com/join</font></li>
+            <li>Fill out the form</li>
+            <li>Password requires a minimum of 7 characters and needs at least one number</li>
+            <li>After form submission, chose the <b>Free</b> plan for now (default selection)</li>
+            <li>Congratulations!! You now have an account on <a href="https://github.com/">Github</a></li>
+          </section>
 
-        <section>
-          <h2>So, let's try it.</h2>
-          <li>If you don't already have one, create an account on Github</li> 
-          <li>Navigate to "https://github.com/join"</li>
-          <li>Fill out the form</li>
-          <li>Password requires a minimum of 7 characters and needs at least one number</li>
-          <li>After form submission, chose the <b>Free</b> plan for now (default selection)</li>
-          <li>Congratulations!! You now have an account on <a href="https://github.com/">Github</a></li>
-        </section>
+          <section>
+            <h2>Create a new <b>repository</b></h2>
+            <img src="img/create-new.png" />
+          </section>  
+          
+          <section>
+            <img src="img/create-new-repo.png" width="200%" height="200%" />
+          </section>
 
-        <section>
-          <h2>Create a new <b>repository</b></h2>
-          <img src="img/create-new.png" />
-        </section>
+          <section>
+            <img src="img/sample-project.png" />
+          </section>
 
-        <section>
-          <img src="img/create-new-repo.png" width="200%" height="200%" />
-        </section>
+          <section>
+            <img src="img/git-push-command.png" />
+          </section>      
 
-        <section>
-          <img src="img/sample-project.png" />
-        </section>
+        </section> 
 
-        <section>
-          <img src="img/git-push-command.png" />
-        </section>
-
-        <section>
+       <section>
           <h3>Setting up git on your local machine</h3>
           <ul>
             <li>GitHub won’t work on your local computer if you don’t install git.</li>
-            <li>Install Git for Windows, Mac or Linux as needed from http://git-scm.com/downloads</li>
+            <li>Install Git for Windows, Mac or Linux as needed from <font color="blue">http://git-scm.com/downloads</font></li>
             <li>Now it’s time to go over to the command line.</li>
           </ul>
         </section>
 
         <section>
-          <h3>Guide to git for Windows machine</h3>
-          <ul>
-            <li>Go to <a href="http://git-scm.com/downloads"></a> and install the git for Windows package.</li>
-            <li>Along the way, you’ll be asked to choose how you want to use git.</li>
-            <li>Select the context menu with Git Bash and Git GUI. </li>
-          </ul>
+          <section>
+            <h3>Guide to git for Windows machine</h3>
+            <ul>
+              <li>Go to <font color="blue">http://git-scm.com/downloads</font> and install the git for Windows package.</li>
+              <li>Along the way, you’ll be asked to choose how you want to use git.</li>
+              <li>Select the context menu with Git Bash and Git GUI. </li>
+            </ul>
+          </section>
+
+          <section>
+            <h3>Guide to git for Windows machine</h3>
+            <ul>
+              <li>Then you’ll get the following screen, chose the first option:</li>
+            </ul>
+            <img src="img/ms-git-usage-1.png" />
+          </section>
+
+          <section>
+            <h3>Guide to git for Windows machine</h3>
+            <ul>
+              <li>Also when asked in another dialog, choose to make git bash show up in the context menu when you right click a windows folder.</li>
+              <li>What is “git bash”? Turns out it’s just a command line interface!</li>
+            </ul>
+          </section>
         </section>
 
-        <section>
-          <h3>Guide to git for Windows machine</h3>
-          <ul>
-            <li>Then you’ll get the following screen, chose the first option:</li>
-          </ul>
-          <img src="img/ms-git-usage-1.png" />
-        </section>
-
-        <section>
-          <h3>Guide to git for Windows machine</h3>
-          <ul>
-            <li>Also when asked in another dialog, choose to make git bash show up in the context menu when you right click a windows folder.</li>
-            <li>What is “git bash”? Turns out it’s just a command line interface!</li>
-          </ul>
-        </section>
+        
 
         <section>
           <h3>How and WHERE to Run Git</h3>
@@ -208,105 +218,115 @@
         </section>
 
         <section>
-          <h3>MAC only</h3>
-          <ul>
-            <li>Search for 'terminal' on your mac</li>
-            <li>Open application</li>
-          </ul>
-          <img src="img/terminal.png" />
-        </section>
+          <section>
+            <h3>MAC only</h3>
+            <ul>
+              <li>Search for 'terminal' on your mac</li>
+              <li>Open application</li>
+            </ul>
+            <img src="img/terminal.png" />
+          </section>
 
-        <section>
-          <h3>MAC only</h3>
-          <p>Setup a dedicated place on your machine for your project</p>
-          <ul>
-            <li><code class="code-large"> <span class="code">mkdir</span> code</code> <br /></li>
-            <li><code class="code-large"> <span class="code">cd</span> code</code> <br /></li>
-            <li><code class="code-large"> <span class="code">mkdir</span> sample-project</code> <br /></li>
-            <li><code class="code-large"> <span class="code">cd</span> sample-project</code></li>
-          </ul>
-        </section>
+          <section>
+            <h3>MAC only</h3>
+            <p>Setup a dedicated place on your machine for your project</p>
+            <ul>
+              <li><code class="code-large"> <font color="#971F12">mkdir</font> code</code> <br /></li>
+              <li><code class="code-large"> <font color="#971F12">cd</font> code</code> <br /></li>
+              <li><code class="code-large"> <font color="#971F12">mkdir</font> sample-project</code> <br /></li>
+              <li><code class="code-large"> <font color="#971F12">cd</font> sample-project</code></li>
+            </ul>
+          </section>
+        </section>  
+
+        
 
         <section>
           <img src="img/prepare.gif" />
         </section>
 
         <section>
-          <h3>For Windows</h3>
-          <ul>
-            <li>Create a folder with similar directory structure as we discussed earlier</li>
-            <li>Now we need to run git inside the “sample-project” folder. </li>
-            <li>Navigate to the 'sample-project' folder</li>
-            <li>Right click on an empty space in the Window, and select “Git Bash”</li>
-            <li>This will open a command prompt that’s already in the folder you want. </li>
-          </ul> 
+          <section>
+            <h3>For Windows</h3>
+            <ul>
+              <li>Create a folder with similar directory structure as we discussed earlier</li>
+              <li>Now we need to run git inside the “sample-project” folder. </li>
+              <li>Navigate to the 'sample-project' folder</li>
+              <li>Right click on an empty space in the Window, and select “Git Bash”</li>
+              <li>This will open a command prompt that’s already in the folder you want. </li>
+            </ul> 
+          </section>
+
+          <section>
+            <p>Git bash for windows</p>
+            <img src="img/git-bash.png" />
+            <img src="img/git-bash-screen.png" alt="not my screen">
+          </section>
         </section>
 
         <section>
-          <p>Git bash for windows</p>
-          <img src="img/git-bash.png" />
-          <img src="img/git-bash-screen.png" alt="not my screen">
-        </section>
+          <section>
+            <h3>Common git-specific commands</h3>
+            <ul>
+              <li><code class="code-large"><font color="#971F12"> git init</font></code><br /></li>
+              <li><code class="code-large"><font color="#971F12"> git config</font></code> <br /></li>
+              <li><code class="code-large"><font color="#971F12"> git help</font></code> <br /></li>
+            </ul>
+          </section>
 
-        <section>
-          <h3>Common git-specific commands</h3>
-          <ul>
-            <li><code class="code-large"> git init</code><br /></li>
-            <li><code class="code-large"> git config</code> <br /></li>
-            <li><code class="code-large"> git help</code> <br /></li>
-          </ul>
-        </section>
-
-        <section>
-          <h3>Common git-specific commands</h3>
-          <ul>
-            <li><code class="code-large"> git status</code></li>
-            <li><code class="code-large"> git add</code></li>
-            <li><code class="code-large"> git commit </code></li>
-            <li><code class="code-large"> git checkout</code></li>
-            <li><code class="code-large"> git push</code></li>
-          </ul>
+          <section>
+            <h3>Common git-specific commands</h3>
+            <ul>
+              <li><code class="code-large"><font color="#971F12"> git status</font></code></li>
+              <li><code class="code-large"><font color="#971F12"> git add</font></code></li>
+              <li><code class="code-large"><font color="#971F12"> git commit</font></code></li>
+              <li><code class="code-large"><font color="#971F12"> git checkout</font></code></li>
+              <li><code class="code-large"><font color="#971F12"> git push</font></code></li>
+            </ul>
+          </section>
         </section>
 
         <section>
           <h3>Set up your project internally</h3>
           <ul>
-            <li><code class="code-large"> <span class="code">touch</span> README.md</code> (create or modify timestamps of a file) <br /></li>
-            <li><code class="code-large"> <span class="code">git init</span></code> <br /></li>
-            <li><code class="code-large"> <span class="code">git add</span> README.md</code> <br /></li>
-            <li><code class="code-large"> <span class="code">git commit</span> -m "Our first file"</code></li>
+            <li><code class="code-large"> <font color="#971F12">touch</font> README.md</code> (create or modify timestamps of a file) <br /></li>
+            <li><code class="code-large"> <font color="#971F12">git init</font></code> <br /></li>
+            <li><code class="code-large"> <font color="#971F12">git add</font> README.md</code> <br /></li>
+            <li><code class="code-large"> <font color="#971F12">git commit -m</font> "Our first file"</code></li>
           </ul>
         </section>
 
         <section>
-          <p>We now need to link the project/folder we set up on our machine with the repository we created on Github!</p>
-        </section>
+          <section>
+            <p>We now need to link the project/folder we set up on our machine with the repository we created on Github!</p>
+          </section>
 
-        <section>
-          <p>Remember this..??</p>
-          <img src="img/git-push-command.png" />
-          <p>Lets link them both! Copy, paste and run these two commands - one at a time!</p>
-        </section>
+          <section>
+            <p>Remember this..??</p>
+            <img src="img/git-push-command.png" />
+            <p>Lets link them both! Copy, paste and run these two commands - one at a time!</p>
+          </section>
 
-        <section>
+          <section>
+              <ul>
+                <li>The command <code><font color="#971F12">git remote add origin git@github.com:username/name-of-repository.git</font></code> creates a new remote called origin located at git@github.com:username/name-of-repository.git</li>
+                <li>Once you do this, in your push commands, you can push to origin instead of typing out the whole URL!!</li>
+              </ul>
+          </section>
+
+          <section>
             <ul>
-              <li>The command <code>git remote add origin git@github.com:username/name-of-repository.git</code> creates a new remote called origin located at git@github.com:username/name-of-repository.git</li>
-              <li>Once you do this, in your push commands, you can push to origin instead of typing out the whole URL!!</li>
+              <li>The <code><font color="#971F12">git push origin master</font></code> command says "push the commits in the local branch named master to the remote named origin".</li>
+              <li>Remember we just named our branch <b>origin</b> in previous step! So remotes are like nicknames for the URL of a repository.</li>
             </ul>
-        </section>
+          </section>
 
-        <section>
-          <ul>
-            <li>The <code>git push origin master</code> command says "push the commits in the local branch named master to the remote named origin".</li>
-            <li>Remember we just named our branch <b>origin</b> in previous step! So remotes are like nicknames for the URL of a repository.</li>
-          </ul>
-        </section>
-
-        <section>
-          <ul>
-            <li>The  .git at the end of the repository name is just a convention.</li>
-            <li>On git servers repositories are kept in directories named project.git</li>
-          </ul>
+          <section>
+            <ul>
+              <li>The  .git at the end of the repository name is just a convention.</li>
+              <li>On git servers repositories are kept in directories named project.git</li>
+            </ul>
+          </section>
         </section>
 
         <section>
@@ -315,26 +335,32 @@
         </section>
 
         <section>
-          <h2>Let's make another file</h2>
+          <section>
+            <h2>Let's make another file</h2>
+            <ul>
+              <li><code class="code-large"><font color="#971F12">touch</font> index.html</code> <br /></li>
+              <li><code class="code-large"><font color="#971F12">git add</font> --all</code> <em>Shorthand for 'add everything'</em> <br /></li>
+              <li><code class="code-large"><font color="#971F12">git commit -m</font> "Commit message"</code> <br /></li>
+            <li><code class="code-large"><font color="#971F12">git push</font></code></li>
+            </ul>
 
-          <ul>
-            <li><code class="code-large">touch index.html</code> <br /></li>
-            <li><code class="code-large">git add --all</code> <em>Shorthand for 'add everything'</em> <br /></li>
-            <li><code class="code-large">git commit -m "Commit message"</code> <br /></li>
-          <li><code class="code-large">git push</code></li>
-          </ul>
+          </section>
 
+          <section>
+            <h2>And when you refresh github again...</h2>
+            <img src="img/pushed.jpg" />
+          </section>
         </section>
 
         <section>
-          <h2>And when you refresh github again...</h2>
-          <img src="img/pushed.jpg" />
-        </section>
-
-        <section>
-          <code class="code-inline"><b>git log</b></code>: <code>git lg</code><br />
+          <code class="code-inline"><b>git log</b></code>: <code class="code-large"><font color="#971F12">git lg</font></code><br />
           <p>Shows the commit logs</p>
           <img src="img/git-log.png" />
+        </section>
+
+        <section>
+          <h2>Moving forward...</h2>
+          <img src="img/now_what_finding_nemo.gif" />
         </section>
 
        <section>
