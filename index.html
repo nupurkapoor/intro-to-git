@@ -123,16 +123,6 @@
         <section>
           <h2>So what is Github, then?</h2>
           <ul>
-            <li><b>Command Line: </b>The computer program we use to input Git commands.</li>
-            <li><b>Repository: </b>A directory or storage space where your projects can live. Shorten to 'repo'. You can keep code files, text files, image files inside a repository.</li>
-            <li><b>Commit: </b> This is the command that gives Git its power. When you commit, you are taking a “snapshot” of your repository at that point in time, giving you a checkpoint to which you can reevaluate or restore your project to any previous state.</li>
-            <li><b>Branch: </b> In multiple-user project scenerios, users “branch off” of the main project with their own versions with changes they themselves have made. After they’re done, it’s time to “merge” that branch back with the “master,” the main directory of the project.</li>
-          </ul>
-        </section>
-
-        <section>
-          <h2>Common terminology</h2>
-          <ul>
             <li>Github: https://github.com/</li>
             <li>Website where you can backup your code (like Dropbox)</li>
             <li>See other people's code (open-source)</li>
@@ -142,9 +132,19 @@
         </section>
 
         <section>
+          <h2>Common terminology</h2>
+          <ul>
+            <li><b>Command Line: </b>The computer program we use to input Git commands.</li>
+            <li><b>Repository: </b>A directory or storage space where your projects can live. Shorten to 'repo'. You can keep code files, text files, image files inside a repository.</li>
+            <li><b>Commit: </b> This is the command that gives Git its power. When you commit, you are taking a “snapshot” of your repository at that point in time, giving you a checkpoint to which you can reevaluate or restore your project to any previous state.</li>
+            <li><b>Branch: </b> In multiple-user project scenerios, users “branch off” of the main project with their own versions with changes they themselves have made. After they’re done, it’s time to “merge” that branch back with the “master,” the main directory of the project.</li>
+          </ul>
+        </section>
+
+        <section>
           <h2>So, let's try it.</h2>
           <li>If you don't already have one, create an account on Github</li> 
-          <li>Navigate to <a href="https://github.com/join"></a></li>
+          <li>Navigate to https://github.com/join"</li>
           <li>Fill out the form</li>
           <li>Password requires a minimum of 7 characters and needs at least one number</li>
           <li>After form submission, chose the <b>Free</b> plan for now (default selection)</li>
@@ -172,7 +172,7 @@
           <h3>Setting up git on your local machine</h3>
           <ul>
             <li>GitHub won’t work on your local computer if you don’t install git.</li>
-            <li>Install Git for Windows, Mac or Linux as needed from <a href="http://git-scm.com/downloads"></a></li>
+            <li>Install Git for Windows, Mac or Linux as needed from http://git-scm.com/downloads</li>
             <li>Now it’s time to go over to the command line.</li>
           </ul>
         </section>
@@ -183,14 +183,22 @@
             <li>Go to <a href="http://git-scm.com/downloads"></a> and install the git for Windows package.</li>
             <li>Along the way, you’ll be asked to choose how you want to use git.</li>
             <li>Select the context menu with Git Bash and Git GUI. </li>
-            <li>Then you’ll get the following screen, chose the first option:</li>
-            <li><img src="img/ms-git-usage-1.png" /></li>
-            <li>Also when asked in another dialog, choose to make git bash show up in the context menu when you right click a windows folder.</li>
           </ul>
         </section>
 
         <section>
           <h3>Guide to git for Windows machine</h3>
+          <ul>
+            <li>Then you’ll get the following screen, chose the first option:</li>
+            <li><img src="img/ms-git-usage-1.png" /></li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Guide to git for Windows machine</h3>
+          <ul>
+            <li>Also when asked in another dialog, choose to make git bash show up in the context menu when you right click a windows folder.</li>
+          </ul>
           <p>What is “git bash”? Turns out it’s just a command line interface!</p>
         </section>
 
@@ -210,7 +218,7 @@
 
         <section>
           <h3>MAC only</h3>
-          <h3>Setup a dedicated place on your machine for your project</h3>
+          <p>Setup a dedicated place on your machine for your project</p>
           <ul>
             <li><code class="code-large"> <span class="code">mkdir</span> code</code> <br /></li>
             <li><code class="code-large"> <span class="code">cd</span> code</code> <br /></li>
@@ -246,9 +254,15 @@
             <li><code class="code-large"> git init</code><br /></li>
             <li><code class="code-large"> git config</code> <br /></li>
             <li><code class="code-large"> git help</code> <br /></li>
+          </ul>
+        </section>
+
+        <section>
+          <h3>Common git-specific commands</h3>
+          <ul>
             <li><code class="code-large"> git status</code></li>
             <li><code class="code-large"> git add</code></li>
-            <li><code class="code-large"> git commit </code> (git commit -m “Message here.”)</li>
+            <li><code class="code-large"> git commit </code></li>
             <li><code class="code-large"> git checkout</code></li>
             <li><code class="code-large"> git push</code></li>
           </ul>
@@ -265,26 +279,26 @@
         </section>
 
         <section>
-          <h3>We now need to link the project/folder we set up on our machine with the repository we created on Github!</h3>
+          <p>We now need to link the project/folder we set up on our machine with the repository we created on Github!</p>
         </section>
 
         <section>
           <p>Remember this..??</p>
           <img src="img/git-push-command.png" />
+          <p>Lets link them both! Copy, paste and run these two commands - one at a time!</p>
         </section>
 
         <section>
-          <h3>Lets link them both!</h3>
+            <p>The command <code>git remote add origin git@github.com:username/name-of-repository.git</code> creates a new remote called origin located at git@github.com:username/name-of-repository.git</p>
+            <p>Once you do this, in your push commands, you can push to origin instead of typing out the whole URL!!</p>
+              
+            <p>This is a command that says "push the commits in the local branch named master to the remote named origin".</p>
+            <p>Remember we just named our branch <b>origin</b> in previous step!</p>
+            <p>So remotes are like nicknames for the URL of a repository</p>
+        </section>
+
+        <section>
           <ul>
-            <li><code class="code-large"> <span class="code">git remote add origin</span> git@github.com:nupurkapoor/sample-project.git</code><br />
-              <p>The command <code>git remote add origin git@github.com:username/name-of-repository.git</code> creates a new remote called origin located at git@github.com:username/name-of-repository.git</p>
-              <p>Once you do this, in your push commands, you can push to origin instead of typing out the whole URL!!</p>
-            </li>
-            <li><code class="code-large"> <span class="code">git push origin master</span></code> <br />
-              <p>This is a command that says "push the commits in the local branch named master to the remote named origin".</p>
-              <p>Remember we just named our branch <b>origin</b> in previous step!</p>
-              <p>So remotes are like nicknames for the URL of a repository</p>
-            </li>
             <li>The  .git at the end of the repository name is just a convention.</li>
             <li>On git servers repositories are kept in directories named project.git</li>
           </ul>
